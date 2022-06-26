@@ -1,20 +1,45 @@
 .body {
+  font-family: "Roboto";
+  font-style: normal;
+  color: #757575;
+  width: 1600px;
 }
 ul {
   list-style: none;
 }
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
 /* CSS HEADER */
 .header {
   display: flex;
-  align-items: flex-start;
+  height: 80px;
 }
 
 .logo-web {
   text-decoration: none;
-  width: 145px;
-  height: 31px;
-  margin-left: 215px;
-  margin-top: 24px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -22,13 +47,10 @@ ul {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #2196f3;
+  margin-left: 215px;
 }
 .logo-studio {
   text-decoration: none;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -37,71 +59,65 @@ ul {
   letter-spacing: 0.03em;
   color: #000000;
 }
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .nav-list {
   display: flex;
-  width: 300px;
-  height: 16px;
-  justify-content: center;
-  gap: 50px;
-  flex-basis: calc((100% - 50px) / 3);
-  align-content: center;
+  row-gap: 50px;
 }
 .nav-item {
   text-decoration: none;
   align-content: center;
-  width: 76px;
-  height: 16px;
-  left: 552px;
-  top: 32px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
+  margin-left: 50px;
 }
 .contacts {
   display: flex;
-  flex-direction: row;
-  gap: 50px;
+  align-items: center;
 }
 .mailto {
   text-decoration: none;
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
-
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
   color: #757575;
+  margin-left: 330px;
+}
+.callto {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-left: 50px;
 }
 .mailto:hover,
 .callto:hover,
 .nav-item:hover {
   color: #2196f3;
 }
-.callto {
-  text-decoration: none;
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-  color: #757575;
-}
-
 /* CSS MAIN */
+
+.button-block {
+  display: flexbox;
+  justify-items: center;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background: #2f303a;
+}
+.head-text-button {
+  display: inline-block;
+  width: 700px;
+  margin-top: 200px;
+}
