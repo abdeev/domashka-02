@@ -2,7 +2,9 @@
   font-family: "Roboto";
   font-style: normal;
   color: #757575;
-  width: 1600px;
+  background-color: #e5e5e5;
+  margin: 0px;
+  padding: 0px;
 }
 ul {
   list-style: none;
@@ -32,10 +34,13 @@ h3 {
   text-transform: uppercase;
   color: #212121;
 }
-/* CSS HEADER */
+/* CSS HEADER =============================================*/
 .header {
   display: flex;
-  height: 80px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  flex-basis: 1600px;
 }
 
 .logo-web {
@@ -47,7 +52,7 @@ h3 {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #2196f3;
-  margin-left: 215px;
+  margin-left: 250px;
 }
 .logo-studio {
   text-decoration: none;
@@ -66,7 +71,8 @@ h3 {
 }
 .nav-list {
   display: flex;
-  row-gap: 50px;
+  flex-direction: row;
+  gap: 50px;
 }
 .nav-item {
   text-decoration: none;
@@ -76,48 +82,108 @@ h3 {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
-  margin-left: 50px;
 }
 .contacts {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  gap: 50px;
+  margin-right: 250px;
 }
-.mailto {
+.contacts-item {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
-  margin-left: 330px;
 }
-.callto {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
-  margin-left: 50px;
-}
-.mailto:hover,
-.callto:hover,
+.contacts-item:hover,
+.contacts-item:hover,
 .nav-item:hover {
   color: #2196f3;
 }
-/* CSS MAIN */
 
+/* блок замовити послугу=================================== */
 .button-block {
-  display: flexbox;
-  justify-items: center;
-  width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 600px;
-  left: 0px;
-  top: 80px;
   background: #2f303a;
 }
 .head-text-button {
-  display: inline-block;
   width: 700px;
-  margin-top: 200px;
+}
+.button {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #2196f3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button:hover {
+  background-color: #188ce8;
+}
+
+/* Наші особливості =========================================*/
+.features {
+  background-color: #ffffff;
+}
+.hidden-header {
+  display: none;
+}
+.features-list {
+  display: flex;
+  flex-direction: row;
+  max-width: 1170px;
+  justify-content: space-around;
+  padding: 0px;
+  margin: 0px;
+}
+.features-card {
+  width: 270px;
+}
+
+/* Чим ми займаймося ========================================*/
+.we-do {
+  background-color: #ffffff;
+}
+.we-do-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+/* Наша команда =============================================*/
+.team-block {
+  width: 1600px;
+}
+.team {
+  display: flex;
+  flex-direction: row;
+  background-color: #f5f4fa;
+  justify-content: center;
+}
+.team-card {
+  width: 270px;
+}
+/* Підвал ===================================================*/
+.footer {
+  background-color: #2f303a;
+}
+.logo-studio-footer {
+  color: #ffffff;
+}
+.address {
+  text-decoration: none;
+}
+.footer-contacts-addr {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
 }

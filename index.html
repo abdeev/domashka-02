@@ -26,8 +26,8 @@
 
         <!-- контакти mailto phoneto-->
         <ul class="contacts">
-          <li><a class="mailto" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="callto" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li><a class="contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="contacts-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </header>
 
@@ -36,13 +36,13 @@
         <section class="button-block">
             <h1 class="head-text-button">Еффективні рішення для вашого бізнесу</h1>
 
-            <button type="button">Замовити послугу</button>
+            <button class="button" type="button">Замовити послугу</button>
         </section>
         <!-- наші особливості -->
-        <section>
-          <h2>особливості</h2>
-          <ul>
-            <li>
+        <section class="features">
+          <h2 class="hidden-header">особливості</h2>
+          <ul class="features-list">
+            <li class="features-card">
               <h3>Увага до деталей</h3>
               <p>
                 Ідейні міркування, а також початок повсякденної роботи з
@@ -50,7 +50,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="features-card">
               <h3>Пунктуальність</h3>
               <p>
                 Завдання організації, особливо ж рамки і місце навчання кадрів
@@ -58,14 +58,14 @@
               </p>
             </li>
 
-            <li>
+            <li class="features-card">
               <h3>Планування</h3>
               <p>
                 Також консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
 
-            <li>
+            <li class="features-card">
               <h3>Сучасні технології</h3>
               <p>
                 Значущість цих проблем настільки очевидна, що реалізація
@@ -76,9 +76,9 @@
         </section>
 
         <!-- чим ми займаємось -->
-        <section>
+        <section class="we-do">
           <h2>Чим ми займаємося</h2>
-          <ul>
+          <ul class="we-do-list">
             <li>
               <img
                 src="./images/our_work/desktop.jpg"
@@ -104,64 +104,66 @@
         </section>
 
         <!-- наша команда -->
-        <section>
-          <h2>Наша команда</h2>
+        <section class="team-block">
           <ul>
-            <li>
-              <img
+          <li><h2>Наша команда</h2></li>
+          <li class="team"><ul class="team-card">
+              <li>
+                <img
                 src="./images/team/igordemianenko.jpg"
                 alt="Фото Ігор Дем'яненко"
                 width="270"
-              />
+                />
               <h3>Ігор Дем'яненко</h3>
               <p>Product Designer</p>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <img
+              </li>
+            </ul>
+            <ul class="team-card">
+              <li>
+               <img
                 src="./images/team/olgarepina.jpg"
                 alt="Фото Ольга Репіна"
                 width="270"
-              />
-              <h3>Ольга Репіна</h3>
-              <p>Frontend Developer</p>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <img
+                />
+                <h3>Ольга Репіна</h3>
+                <p>Frontend Developer</p>
+             </li>
+            </ul>
+            <ul class="team-card">
+             <li>
+                <img
                 src="./images/team/nikolaitarasov.jpg"
                 alt="Фото Микола Тарасов"
                 width="270"
-              />
-              <h3>Микола Тарасов</h3>
-              <p>Marketing</p>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <img
+                />
+               <h3>Микола Тарасов</h3>
+               <p>Marketing</p>
+              </li>
+            </ul>
+            <ul class="team-card">
+              <li>
+                <img
                 src="./images/team/mikhailermakov.jpg"
                 alt="Фото Михайло Єрмаков"
                 width="270"
-              />
-              <h3>Михайло Єрмаков</h3>
-              <p>UI Designer</p>
-            </li>
+                />
+                <h3>Михайло Єрмаков</h3>
+                <p>UI Designer</p>
+             </li>
+            </ul></li>
           </ul>
         </section>
       </main>
 
       <!-- підвал -->
-      <footer>
+      <footer class="footer">
         <!-- логотип -->
-        <a class="logo-web" href="./index.html">Web<span class="logo-studio">Studio</span></a>
+        <a class="logo-web" href="./index.html">Web<span class="logo-studio-footer">Studio</span></a>
 
         <!-- зворотня адреса -->
-        <address>
+        <address class="address">
           <ul>
-            <li>
+            <li  class="footer-contacts-addr">
               <a
                 href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ehbc=2E312F"
                 >г. Киев, пр-т Леси Украинки, 26</a
