@@ -3,8 +3,6 @@
   font-style: normal;
   color: #757575;
   background-color: #e5e5e5;
-  margin: 0px;
-  padding: 0px;
 }
 ul {
   list-style: none;
@@ -31,7 +29,6 @@ h3 {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #212121;
 }
 /* CSS HEADER =============================================*/
@@ -40,7 +37,10 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   background-color: #ffffff;
-  flex-basis: 1600px;
+  width: 1600px;
+  padding: 0 20px;
+  margin: 0 auto;
+  border: 1px solid #ececec;
 }
 
 .logo-web {
@@ -103,12 +103,20 @@ h3 {
 .nav-item:hover {
   color: #2196f3;
 }
+.contacts-item:focus,
+.contacts-item:focus,
+.nav-item:focus {
+  color: #2196f3;
+}
 
 /* блок замовити послугу=================================== */
 .button-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 1600px;
+  padding: 0 20px;
+  margin: 0 auto;
   height: 600px;
   background: #2f303a;
 }
@@ -134,6 +142,9 @@ h3 {
 /* Наші особливості =========================================*/
 .features {
   background-color: #ffffff;
+  width: 1600px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 .hidden-header {
   display: none;
@@ -149,10 +160,16 @@ h3 {
 .features-card {
   width: 270px;
 }
+.features-card-header {
+  text-transform: uppercase;
+}
 
 /* Чим ми займаймося ========================================*/
 .we-do {
   background-color: #ffffff;
+  width: 1600px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 .we-do-list {
   display: flex;
@@ -163,27 +180,61 @@ h3 {
 /* Наша команда =============================================*/
 .team-block {
   width: 1600px;
+  padding: 0 20px;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: #f5f4fa;
 }
 .team {
   display: flex;
   flex-direction: row;
-  background-color: #f5f4fa;
-  justify-content: center;
 }
 .team-card {
   width: 270px;
 }
 /* Підвал ===================================================*/
 .footer {
+  width: 1600px;
+  padding: 0 20px;
+  margin: 0 auto;
   background-color: #2f303a;
 }
 .logo-studio-footer {
   color: #ffffff;
 }
 .address {
-  text-decoration: none;
+  /* list-style: normal; */
 }
 .footer-contacts-addr {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+/* Стилі до сторінки Портфоліо  ============================*/
+.portfolio-main {
+  width: 1600px;
+  padding: 0px 0px;
+  margin: auto;
+  background-color: #ffffff;
+}
+.sort-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 1600px;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1600px;
+  background-color: #ffffff;
+
+  justify-content: center;
+}
+.projects-list-card {
+  display: flexbox;
+  width: fit-content;
+  border: 1px solid #ececec;
+  margin: 15px;
 }
