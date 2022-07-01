@@ -6,6 +6,7 @@
 }
 ul {
   list-style: none;
+  list-style-type: none;
 }
 h1 {
   font-weight: 900;
@@ -20,6 +21,7 @@ h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
+  margin: 0px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -38,6 +40,7 @@ h3 {
   justify-content: space-between;
   background-color: #ffffff;
   width: 1600px;
+  height: 80px;
   padding: 0 20px;
   margin: 0 auto;
   border: 1px solid #ececec;
@@ -100,9 +103,7 @@ h3 {
 }
 .contacts-item:hover,
 .contacts-item:hover,
-.nav-item:hover {
-  color: #2196f3;
-}
+.nav-item:hover,
 .contacts-item:focus,
 .contacts-item:focus,
 .nav-item:focus {
@@ -114,6 +115,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 1600px;
   padding: 0 20px;
   margin: 0 auto;
@@ -122,10 +124,13 @@ h3 {
 }
 .head-text-button {
   width: 700px;
+  margin: 30px auto;
 }
 .button {
   width: 200px;
   height: 50px;
+  padding: 0%;
+  margin: 0px;
   border-radius: 4px;
   border-style: none;
   background-color: #2196f3;
@@ -143,8 +148,10 @@ h3 {
 .features {
   background-color: #ffffff;
   width: 1600px;
-  padding: 0 20px;
+  padding: 94px 20px;
   margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 .hidden-header {
   display: none;
@@ -153,12 +160,12 @@ h3 {
   display: flex;
   flex-direction: row;
   max-width: 1170px;
-  justify-content: space-around;
   padding: 0px;
-  margin: 0px;
+  margin: auto;
 }
 .features-card {
   width: 270px;
+  margin: 0px 30px;
 }
 .features-card-header {
   text-transform: uppercase;
@@ -168,7 +175,7 @@ h3 {
 .we-do {
   background-color: #ffffff;
   width: 1600px;
-  padding: 0 20px;
+  padding: 94px 20px;
   margin: 0 auto;
 }
 .we-do-list {
@@ -176,43 +183,69 @@ h3 {
   flex-direction: row;
   justify-content: center;
   gap: 30px;
+  margin: 0 auto;
 }
 /* Наша команда =============================================*/
 .team-block {
   width: 1600px;
-  padding: 0 20px;
-  margin: 0 auto;
+  padding: 94px 20px;
+  margin: 0px auto;
   justify-content: center;
+  align-items: center;
   background-color: #f5f4fa;
+}
+.team-block > ul {
+  margin: 0px auto;
+  padding: 0px 0px;
 }
 .team {
   display: flex;
   flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 .team-card {
   width: 270px;
+  padding: 0px;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-card > p {
+  margin: 10px auto;
 }
 /* Підвал ===================================================*/
 .footer {
   width: 1600px;
-  padding: 0 20px;
-  margin: 0 auto;
+  height: 130px;
+  padding: 60px 20px;
+  margin: 0px auto;
   background-color: #2f303a;
 }
 .logo-studio-footer {
   color: #ffffff;
 }
 .address {
-  /* list-style: normal; */
+  margin-left: 250px;
+  width: auto;
+}
+.address > ul {
+  padding: 0%;
 }
 .footer-contacts-addr {
+  list-style: none;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 /* Стилі до сторінки Портфоліо  ============================*/
 .portfolio-main {
   width: 1600px;
-  padding: 0px 0px;
+  padding: 94px 20px;
   margin: auto;
   background-color: #ffffff;
 }
@@ -222,19 +255,27 @@ h3 {
   gap: 8px;
   width: 1600px;
   justify-content: center;
+  align-items: center;
   background-color: #ffffff;
 }
 .projects-list {
   display: flex;
   flex-wrap: wrap;
   width: 1600px;
+  padding: 0px 0px;
+  margin: 60px auto 0px auto;
   background-color: #ffffff;
-
   justify-content: center;
 }
 .projects-list-card {
-  display: flexbox;
-  width: fit-content;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #ececec;
   margin: 15px;
+  padding: 0px;
+}
+.projects-list-title {
+  display: block;
+  text-align: left;
+  padding: 20px 24px;
 }
