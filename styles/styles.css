@@ -6,7 +6,6 @@
 }
 ul {
   list-style: none;
-  list-style-type: none;
 }
 h1 {
   font-weight: 900;
@@ -230,15 +229,16 @@ h3 {
 .logo-studio-footer {
   color: #ffffff;
 }
-.address {
-  margin-left: 250px;
-  width: auto;
-}
-.address > ul {
-  padding: 0%;
+address {
+  list-style: normal;
 }
 .footer-contacts-addr {
-  list-style: none;
+  margin-left: 250px;
+  padding: 0px;
+  font-style: normal;
+  color: #ffffff;
+}
+.footer-contacts {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
