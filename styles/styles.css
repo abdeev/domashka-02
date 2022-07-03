@@ -12,6 +12,7 @@
   --btn-text-accent-color: #ffffff;
   --btn-bg-def-color: #f5f4fa;
   --btn-text-def-color: #212121;
+  --btn-bg-hover-color: #188ce8;
 }
 .body {
   font-family: "Roboto";
@@ -48,9 +49,6 @@ h3 {
 }
 /* CSS HEADER =============================================*/
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   background-color: var(--bg-head-color);
   width: 1600px;
   height: 80px;
@@ -79,13 +77,9 @@ h3 {
   color: var(--logo-studio-dark);
 }
 .nav {
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 .nav-list {
-  display: flex;
-  flex-direction: row;
   gap: 50px;
 }
 .nav-item {
@@ -98,9 +92,6 @@ h3 {
   color: var(--header-dark-color);
 }
 .contacts {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 50px;
   margin-right: 250px;
 }
@@ -115,16 +106,18 @@ h3 {
 .contacts-item:hover,
 .contacts-item:hover,
 .nav-item:hover,
+.button-filter:hover,
 .contacts-item:focus,
 .contacts-item:focus,
-.nav-item:focus {
-  color: #2196f3;
+.nav-item:focus,
+.button-filter:focus {
+  background-color: var(--btn-bg-hover-color);
+  color: var(--btn-text-accent-color);
+  cursor: pointer;
 }
 
 /* блок замовити послугу=================================== */
 .button-block {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 1600px;
@@ -152,7 +145,11 @@ h3 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button:hover {
-  background-color: #188ce8;
+  background-color: var(--btn-bg-hover-color);
+  cursor: pointer;
+}
+.button:focus {
+  background-color: var(--btn-bg-hover-color);
   cursor: pointer;
 }
 
@@ -169,8 +166,6 @@ h3 {
   display: none;
 }
 .features-list {
-  display: flex;
-  flex-direction: row;
   max-width: 1170px;
   padding: 0px;
   margin: auto;
@@ -191,8 +186,6 @@ h3 {
   margin: 0 auto;
 }
 .we-do-list {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   gap: 30px;
   margin: 0 auto;
@@ -211,8 +204,6 @@ h3 {
   padding: 0px 0px;
 }
 .team {
-  display: flex;
-  flex-direction: row;
   gap: 30px;
   justify-content: center;
   align-items: center;
@@ -262,17 +253,31 @@ address {
   background-color: #ffffff;
 }
 .sort-buttons {
-  display: flex;
-  flex-direction: row;
   gap: 8px;
   width: 1600px;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
 }
+.button-filter {
+  background-color: var(--btn-bg-def-color);
+  color: var(--btn-text-def-color);
+  width: 200px;
+  height: 50px;
+  padding: 0%;
+  margin: 0px;
+  border-radius: 4px;
+  border-style: none;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.active-btn {
+  background-color: var(--btn-bg-accent-color);
+  color: var(--btn-text-accent-color);
+}
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
   width: 1600px;
   padding: 0px 0px;
   margin: 60px auto 0px auto;
@@ -280,14 +285,11 @@ address {
   justify-content: center;
 }
 .projects-list-card {
-  display: flex;
-  flex-direction: column;
   border: 1px solid var(--borders-color);
   margin: 15px;
   padding: 0px;
 }
 .projects-list-title {
-  display: block;
   text-align: left;
   padding: 20px 24px;
 }
