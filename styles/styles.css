@@ -8,6 +8,10 @@
   --bg-body-color: #e5e5e5;
   --header-dark-color: #212121;
   --borders-color: #ececec;
+  --btn-bg-accent-color: #2196f3;
+  --btn-text-accent-color: #ffffff;
+  --btn-bg-def-color: #f5f4fa;
+  --btn-text-def-color: #212121;
 }
 .body {
   font-family: "Roboto";
@@ -140,8 +144,8 @@ h3 {
   margin: 0px;
   border-radius: 4px;
   border-style: none;
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--btn-bg-accent-color);
+  color: var(--btn-text-accent-color);
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.06em;
