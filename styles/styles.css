@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   /* color palette */
   --logo-web-color: #2196f3;
@@ -21,6 +27,7 @@
 }
 ul {
   list-style: none;
+  margin: 0 auto;
 }
 h1 {
   font-weight: 900;
@@ -47,11 +54,16 @@ h3 {
   letter-spacing: 0.03em;
   color: var(--header-dark-color);
 }
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0px auto;
+}
 /* CSS HEADER =============================================*/
 .header {
   background-color: var(--bg-head-color);
   width: 1600px;
-  height: 80px;
+  /* height: 80px; */
   padding: 0 20px;
   margin: 0 auto;
   border: 1px solid var(--borders-color);
@@ -65,7 +77,6 @@ h3 {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--logo-web-color);
-  margin-left: 250px;
 }
 .logo-studio {
   text-decoration: none;
@@ -93,7 +104,6 @@ h3 {
 }
 .contacts {
   gap: 50px;
-  margin-right: 250px;
 }
 .contacts-item {
   text-decoration: none;
@@ -118,17 +128,15 @@ h3 {
 
 /* блок замовити послугу=================================== */
 .button-block {
-  justify-content: center;
-  align-items: center;
   width: 1600px;
   padding: 0 20px;
   margin: 0 auto;
-  height: 600px;
-  background: #2f303a;
+  /* height: 600px; */
+  background: var(--bg-foot-color);
 }
 .head-text-button {
   width: 700px;
-  margin: 30px auto;
+  margin: 0px auto;
 }
 .button {
   width: 200px;
@@ -157,11 +165,11 @@ h3 {
 /* Наші особливості =========================================*/
 .features {
   background-color: #ffffff;
-  width: 1600px;
-  padding: 94px 20px;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
+  width: 1600px;
+  padding: 0 20px;
+  margin: 0px auto;
 }
 .hidden-header {
   display: none;
@@ -183,7 +191,7 @@ h3 {
 .we-do {
   background-color: #ffffff;
   width: 1600px;
-  padding: 94px 20px;
+  padding: 0px 20px;
   margin: 0 auto;
 }
 .we-do-list {
@@ -194,7 +202,7 @@ h3 {
 /* Наша команда =============================================*/
 .team-block {
   width: 1600px;
-  padding: 94px 20px;
+  padding: 0px 20px;
   margin: 0px auto;
   justify-content: center;
   align-items: center;
@@ -227,15 +235,17 @@ h3 {
 .footer {
   width: 1600px;
   height: 130px;
-  padding: 60px 20px;
+  padding: 0px 20px;
   margin: 0px auto;
   background-color: var(--bg-foot-color);
 }
 .logo-studio-footer {
   color: var(--logo-studio-light);
 }
-address {
+.address {
   list-style: normal;
+  font-style: normal;
+  text-decoration: none;
 }
 .footer-contacts-addr {
   margin-left: 250px;
